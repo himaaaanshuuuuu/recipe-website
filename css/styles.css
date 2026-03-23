@@ -1,0 +1,180 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY - MULTI PASTEL GRADIENT */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #4a4a4a;
+
+    background: linear-gradient(-45deg, 
+        #ffe4ec,   /* pastel pink */
+        #fff1e6,   /* peach */
+        #e0f7fa,   /* mint */
+        #f3e8ff,   /* lavender */
+        #fff9c4    /* soft yellow */
+    );
+    background-size: 400% 400%;
+    animation: pastelFlow 15s ease infinite;
+}
+
+/* ANIMATION */
+@keyframes pastelFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(90deg, #ffb3c1, #ffd6a5, #caffbf);
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+}
+
+/* NAVBAR */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 8px 14px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+/* NAV HOVER */
+nav a:hover {
+    background: rgba(255,255,255,0.6);
+    transform: scale(1.1);
+}
+
+/* INTRO */
+.intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.intro h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+}
+
+/* CARD STYLE */
+.card {
+    background: rgba(255,255,255,0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    width: 260px;
+    padding: 15px;
+    text-align: center;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+/* CARD HOVER */
+.card:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+.card a {
+    display: inline-block;
+    padding: 8px 15px;
+    background: linear-gradient(90deg, #ffb3c1, #caffbf);
+    color: #333;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, #ffd6a5, #a0c4ff);
+}
+
+/* RECIPE PAGE */
+.recipe {
+    max-width: 850px;
+    margin: 40px auto;
+
+    background: rgba(255,255,255,0.7);
+    backdrop-filter: blur(12px);
+
+    padding: 25px;
+    border-radius: 20px;
+
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* IMAGE */
+.recipe img {
+    width: 100%;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+/* HEADINGS */
+.recipe h2 {
+    text-align: center;
+}
+
+.recipe h3 {
+    margin-top: 20px;
+    color: #6a4c93; /* soft purple accent */
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+
+    background: linear-gradient(90deg, #ffd6a5, #caffbf, #a0c4ff);
+    color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+}
