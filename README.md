@@ -1,2 +1,2 @@
 # recipe-website
-Global Rasoi – A website showcasing recipes and cuisines from around the world. Built with semantic HTML and organized CSS, it includes multiple pages with proper navigation, making it easy to explore different dishes and food cultures.
+Global Rasoi is a website showcasing recipes and cuisines from around the world. It is built using HTML and CSS, includes multiple pages with navigation, and demonstrates the basic foundation of front-end development.
